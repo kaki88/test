@@ -63,11 +63,7 @@ class EmailsTable extends Table
             ->requirePresence('text', 'create')
             ->notEmpty('text');
 
-        $validator
-            ->boolean('status')
-            ->requirePresence('status', 'create')
-            ->notEmpty('status');
-
+      
         return $validator;
     }
 
